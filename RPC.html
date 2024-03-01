@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RPC</title>
+		<link rel="stylesheet" href="CSS/RPC.css">
+		</head>
+	<body>
+    <p class="title">Rock Paper Scissors</p>
+    <button onclick="
+          rpc('rock');
+    " class="move-button"><img src="image/rock-emoji.png" class="move-icon"></button>
+
+    <button onclick="
+        rpc('paper')
+    " class="move-button"><img src="image/paper-emoji.png" class="move-icon"></button>
+
+    <button onclick="
+        rpc('scissors')
+    " class="move-button"><img src="image/scissors-emoji.png" class="move-icon"></button>
+
+    <p class="js-result"></p>
+
+    <p class="js-compare"></p>
+
+    <p class="js-score"></p>
+
+    <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+    " class="reset-button">Reset score</button>
+
+	<script src="scripts/RPC.js"></script>
+</body>
+</html>
